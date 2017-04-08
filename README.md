@@ -1,7 +1,7 @@
 # EZE-CORES
 Script Framework written in PHP
 
-Copyright (c) 2002 Biznatch Enterprises
+Copyright (c) 2002 Biznatch Enterprises,
 All rights reserved.
 
 Redistribution and use in source and binary forms are permitted

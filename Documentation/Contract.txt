@@ -1,0 +1,93 @@
+Used in conjunction with the Website Planning Worksheet which should also be printed out by the client.
+
+Contact Name ______________________________
+
+Phone ___________ FAX ___________
+
+Company/Client _____________________________
+
+Address ________________________________
+
+______________________________________________
+
+City ____________________ State ____ ZIP ____ Country ___
+
+E-mail address _________________________
+
+Present WWW URL (if any):
+
+_______________________________________________
+
+Username ________________ Password ______________________
+
+Our desire is to delight the client. One way is to make clear our understandings with each other. These are the terms of our agreement together:
+
+1. Authorization.The above-named client is engaging Wilson Internet Services, a sole proprietor, located at ... as an independent contractor for the specific project of developing and/or improving a World Wide website to be installed on the client's web space on a web hosting service's computer. The client hereby authorizes Wilson Internet Services to access this account, and authorizes the web hosting service to provide Wilson Internet Services with "write permission" for the client's webpage directory, cgi-bin directory, and any other directories or programs which need to be accessed for this project. The client also authorizes Wilson Internet Services to publicize their completed website to Web search engines, as well as other Web directories and indexes.
+
+2. Standard Website Package Elements.(For Standard Website Packages Only. Cross out for online stores.) Wilson Internet Services includes the following elements in their Standard Website Packages:
+
+    * E-mail/phone consultation(Up to 2 hours total general Internet orientation education, marketing strategy, Web design consultation, and helping clients learn to use their own webpage editor. Telephone long distance charges are in addition to package rates quoted. Additional education and consultation is at our hourly rate.)
+    * Words of textsupplied by the client (200 words per page approximate maximum if not supplied via diskette. webpages of more than 1,200 words of text may be subject to additional fees, especially if they require a great deal of formatting.)
+    * Linksto external pages, up to an average of 2.5 per page.
+    * Custom Graphics Package. Masthead graphic on first page (simple custom graphic incorporating company logo). Top-of-page graphic for all other pages in your website. Colorful lines and bullets, and colored and textured background.
+    * Photos and other misc. graphic images supplied by client (up to an average of 1.3 included per page in standard websites and "regular" online store pages, in addition to masthead and top-of-page graphic. Color originals larger than 5" x 8" are extra).
+    * Installationof webpages on the client's web hosting service.
+    * Minor updates and changesto existing webpages for six months, subject to the limits outlined below. Additional changes billed at hourly rate. For online stores, this includes only "regular" pages, not product pages or the ordering system pages.
+    * Site publicityto at least a dozen major Web search engines, such as Yahoo, AltaVista, InfoSeek, WebCrawler, Lycos, HotBot, etc.
+    * E-mail response linkon each webpage to any e-mail address the client designates.
+    * Feedback or guest book form(Basic CGI program included. Includes up to 20 fields. Extra charges may be incurred if the client's web hosting service does not use a Unix operating system. Not included in the package price for sites smaller than 6 pages. This is not included in online stores, since the shopping cart software is a functional equivalent.)
+    * Image Mapfor internal navigation (Not included in the package price for sites smaller than 6 pages.) 
+
+3. Standard Website Packages only.(Cross out this section for online stores.) The content of the webpages will be supplied by the client and executed as specified by the client in the "Website Planning Worksheet" dated _______________. This website includes up to ___________ webpages. In case the client desires additional standard webpages beyond the original number of pages specified above, the client agrees to pay Wilson Internet Services an additional $_______ for each additional webpage. Graphics or photos beyond the allowed average of 1.3 per webpage shall be billed at an additional $____ each. Where custom graphic work (beyond the scope of the "Custom Graphics Package" detailed above) is requested, it will be billed at the hourly rate specified below. The store size and additional services, and prices of each are detailed on the attached estimate. 
+
+4. Online stores only. (Cross out this section for Standard Website Packages.) The text and graphic content of the webpages will be supplied by the client and executed as specified by the client in the "webpage Planning Worksheet" dated _______________. and the Store Planning Worksheet dated _____________. It is understood that total prices calculated below are likely to vary from the final amount due to different quantities of products, categories, photos, regular pages, etc. in the final store. An Estimate from Wilson Internet Services dated ____________ is attached to this document and governs the prices for this contract. Notwithstanding any prices listed in literature or on webpages, the client and Wilson Internet Services agree that the services described above in this section shall be completed for $__________________ and upon this amount the first payment shall be determined. The final payment shall reflect and include all elements actually completed at the prices attached.
+
+We include e-mail/phone consultation of up to 2 hours total general Internet orientation education, marketing strategy, Web design consultation, and helping clients learn to use the store software. Telephone long distance charges are in addition to package rates quoted. Additional education and consultation is at our hourly rate.)
+
+Product webpages, products, or photos added after the store is ready for advertising to the Web search engines will be calculated for actual time spent at the hourly rate specified below.
+
+5. Maintenance and Hourly Rate.This agreement includes minor webpage maintenance to regular webpages (not store product pages) over a six-month period, including updating links and making minor changes to a sentence or paragraph. It does not including removing nearly all the text from a page and replacing it with new text. If the client or an agent other than Wilson Internet Services attempts updating the client's pages, time to repair webpages will be assessed at the hourly rate, and is not included as part of the updating time. The six-month maintenance period commences upon the date the client signs this contract. 
+
+Changes requested by the client beyond those limits will be billed at the hourly rate of $ _________. This rate shall also govern additional work authorized beyond the maximums specified above for such services as general Internet orientation education, marketing consulting, webpage design, editing, modifying product pages and databases in an online store, and art, photo, graphics services, and helping clients learn how to use their own webpage editor. CGI programming charges (if any) are not included in this rate.
+
+6. Changes to Submitted Text.Please send us your final text. Time required to make substantive changes to client-submitted text after the webpages have been constructed will be additional, billed at the hourly rate.
+
+7. Web Hosting.The client understands that any web hosting services require a separate contract with a web hosting service. The client agrees to select a web hosting service which allows Wilson Internet Services full access to the website and a cgi-bin directory via FTP and telnet. The client further understands that if the web hosting service's operating system is not a Unix system, standard CGI software may not work, and providing a substitute may incur additional charges.
+
+8. Completion Date.Wilson Internet Services and the client must work together to complete the website in a timely manner. We agree to work expeditiously to complete the website no later than _________________________.
+
+If the client does not supply Wilson Internet Services complete text and graphics content all webpages contracted for within six weeks of the date this contract was signed, the entire amount of the contract becomes due and payable. If the client has not submitted complete text and graphics content within two months after signing of this contract, an additional continuation fee of 10% of the total contract price will also be assessed each month until the website is advertised.
+
+9. Payment of Fees.Fees to Wilson Internet Services are due and payable on the following schedule: 50% upon signing this contract, 50% when the webpages have been constructed according to the client's original written specifications. If the total amount of this contract is less than $600, the total amount shall be paid upon signing this contract. In case the client has not secured Web space on a web hosting service by the time the webpages are completed, the webpages may be delivered to the client on diskette or attached to an e-mail message. Advertising the pages to Web search engines and updating occur only after the final payment is made. All payments will be made in US funds.
+
+10. Assignment of Project.Wilson Internet Services reserves the right to assign subcontractors to this project to insure the right fit for the job as well as on-time completion.
+
+11. Legal Stuff.Wilson Internet Services does not warrant that the functions contained in these webpages or the Internet website will meet the client's requirements or that the operation of the webpages will be uninterrupted or error-free. The entire risk as to the quality and performance of the webpages and website is with client. In no event will Wilson Internet Services be liable to the client or any third party for any damages, including any lost profits, lost savings or other incidental, consequential or special damages arising out of the operation of or inability to operate these webpages or website, even if Wilson Internet Services has been advised of the possibility of such damages. If any provision of this agreement shall be unlawful, void, or for any reason unenforceable, then that provision shall be deemed severable from this agreement and shall not affect the validity and enforceability of any remaining provisions.
+
+12. Copyrights and Trademarks.The client represents to Wilson Internet Services and unconditionally guarantees that any elements of text, graphics, photos, designs, trademarks, or other artwork furnished to Wilson Internet Services for inclusion in webpages are owned by the client, or that the client has permission from the rightful owner to use each of these elements, and will hold harmless, protect, and defend Wilson Internet Services and its subcontractors from any claim or suit arising from the use of such elements furnished by the client.
+
+13. Laws Affecting Electronic Commerce. From time to time governments enact laws and levy taxes and tariffs affecting Internet electronic commerce. The client agrees that the client is solely responsible for complying with such laws, taxes, and tariffs, and will hold harmless, protect, and defend Wilson Internet Services and its subcontractors from any claim, suit, penalty, tax, or tariff arising from the client's exercise of Internet electronic commerce.
+
+14. Copyright to Webpages. Copyright to the finished assembled work of webpages produced by Wilson Internet Services is owned by Wilson Internet Services. Upon final payment of this contract, the client is assigned rights to use as a website the design, graphics, and text contained in the finished assembled website. Rights to photos, graphics, source code, work-up files, and computer programs are specifically not transferred to the client, and remain the property of their respective owners. Wilson Internet Service and its subcontractors retain the right to display graphics and other Web design elements as examples of their work in their respective portfolios.
+
+15. Payment of fees.In order for Wilson Internet Services to remain in business, payments must be made promptly. Delinquent bills will be assessed a $15 charge if payment is not received within 10 days of the due date. If an amount remains delinquent 30 days after its due date, an additional 5% penalty will be added for each month of delinquency. Wilson Internet Services reserves the right to remove webpages from viewing on the Internet until final payment is made. In case collection proves necessary, the client agrees to pay all fees incurred by that process. This agreement becomes effective only when signed by Wilson Internet Services. Regardless of the place of signing of this agreement, the client agrees that for purposes of venue, this contract was entered into in Placer County, California, and any dispute will be litigated or arbitrated in Placer County, California. Please pay on time.
+
+16. Sole Agreement.The agreement contained in this "Website Design Contract" constitutes the sole agreement between Wilson Internet Services and the client regarding this website. Any additional work not specified in this contract must be authorized by a written change order. All prices specified in this contract will be honored for six (6) months after both parties sign this contract. Continued services after that time will require a new agreement.
+
+18. Initial Payment and Refund Policy.
+
+The total amount of this contract is $______________
+
+This agreement begins with an initial payment of $_____________. If the client halts work and applies by registered letter for a refund within 30 days, to the Director of Wilson Internet Services, P.O. Box 308, Rocklin, CA 95677, phone (916) 652-4659, work completed shall be billed at the hourly rate stated above, and deducted from the initial payment, the balance of which shall be returned to the client. If, at the time of the request for refund, work has been completed beyond the amount covered by the initial payment, the client shall be liable to pay for all work completed at the hourly rate stated above. No portion of this initial payment will be refunded unless written application is made within 30 days of signing this contract.
+
+The undersigned agrees to the terms of this agreement on behalf of his or her organization or business.
+
+On behalf of the client (authorized signature):
+
+_______________________________________ Date ________________
+
+On behalf of Wilson Internet Services (authorized signature)
+
+_______________________________________ Date ________________
+
+Last updated July 19, 1999

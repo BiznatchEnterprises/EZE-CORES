@@ -1,3 +1,5 @@
+VIEW: https://github.com/BiznatchEnterprises/EZE-CORES/tree/plugin-class
+
 EZE-CORES (Plugin Class)
 
 Script Framework written in PHP

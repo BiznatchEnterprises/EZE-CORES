@@ -1,5 +1,4 @@
-# EZE-CORES
-EZE-CORES (Plugin Class)
+# EZE-CORES (PHP Plugin-Class)
 
 Script Framework written in PHP
 

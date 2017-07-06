@@ -27,7 +27,7 @@ Please donate cryptocoins:
 
 - Bitcoin: 13M7r7VAty1HzCcktfPDKKZg2RXUJKN71P
 - BitConnect: 8QAa8dxG2VNoaKZAM17Tvv1T6uUcW4uFB3
-- Litcoin: LfYzJ3uufV1qFoRsdHpCHPD7KftbF3258S
+- Litecoin: LfYzJ3uufV1qFoRsdHpCHPD7KftbF3258S
 - Peercoin: PJowpqy1He2E31FAthxSNJcSgvb7FtM2pB
 - Bata: BD5DTxrmKL1dHHP5GugxEsxRV7JaZuf1Pr
 - Dash: XgeV36SBHeD2z2iGQrXhQTMtLcPqLc9n6r

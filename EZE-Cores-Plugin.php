@@ -347,9 +347,9 @@ class EZE_CORES {
 
         $this->Load_Layout();
         $this->Load_HTMLModules();
-        $this->Load_HTMLPHPvars();
         $this->Load_Script();
-        $this->Load_Template();
+        $this->Load_HTMLPHPvars();
+	$this->Load_Template();
         
         return $this->APP_OUTPUT;
     }

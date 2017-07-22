@@ -56,12 +56,12 @@ class EZE_CORES {
     }
      //----------- Read FileContents End -----------
 
-    //----------- Load Layout (HTML Layout) Start -----------
+    //----------- Extract HTML Modules Start -----------
      function Extract_HTMLModules($INPUT){
 
         $HTML_MODULES = array();
-        $startchar = "#{@";
-        $endchar = "@}#";
+        $startchar = "#^@";
+        $endchar = "@^#";
         $mod_cnt = 0;
         $mod_num = 0;
         $strstart_pos = 1;
@@ -99,7 +99,7 @@ class EZE_CORES {
 
         }
      }
-    //----------- Load Layout (HTML Template) Start -----------
+    //----------- Extract HTML Modules End -----------
     
     //----------- Load Layout (HTML Template) Start -----------
     function Load_Layout() {

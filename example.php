@@ -48,7 +48,7 @@ $WEB_APP->Change_DefaultPage("home");                                           
 $WEB_APP->Change_PageSettings('home', 'pages/home/', '', '', '', $TEMPLATEPATH_1);                              // [SetPAGE] Homepage (Default)
 $WEB_APP->Change_PageSettings('blog', 'pages/blog/', '', '', '', $TEMPLATEPATH_2);               		        // [SetPAGE] Blog
 
-
+echo $WEB_APP->Execute();
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~ Page Sections End ~~~~~~~~~~~~~~~~~~~~~~~~~~
 

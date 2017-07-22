@@ -62,8 +62,8 @@ class EZE_CORES {
         $HTML_MODULES = array();
         $startchar = "#{@";
         $endchar = "@}#";
-        $mod_cnt;
-        $mod_num;
+        $mod_cnt = 0;
+        $mod_num = 0;
         $strstart_pos = 1;
         $startpos = 0;
         $endpos = 0;

@@ -46,7 +46,7 @@ $TEMPLATEPATH_2 = 'Template-2/';                                                
 $WEB_APP->Change_DefaultPage("home");                                                                           // Default Page ID
 
 $WEB_APP->Change_PageSettings('home', 'pages/home/', '', '', '', $TEMPLATEPATH_1);                              // [SetPAGE] Homepage (Default)
-$WEB_APP->Change_PageSettings('blog', 'pages/blog/', '', '', '', $TEMPLATEPATH_2);               		// [SetPAGE] Buy Shares
+$WEB_APP->Change_PageSettings('blog', 'pages/blog/', '', '', '', $TEMPLATEPATH_2);               		        // [SetPAGE] Blog
 
 
 

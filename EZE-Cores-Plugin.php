@@ -10,19 +10,19 @@
 // ~~~~~~~ START PLUGIN CLASS ~~~~~~~
 class EZE_CORES {
 
-    public $APP_PATH;
-    public $TEMPLATE_PATH;
-    public $APP_OUTPUT;
+	public $APP_PATH;
+	public $TEMPLATE_PATH;
+	public $APP_OUTPUT;
 	public $CORE_OUTPUT;
 	public $CORE_FILEPATH;
 	public $CORE_LAYOUT;
-    public $CORE_SCRIPT;
-    public $CORE_TEMPLATE;
-    public $CORE_HTMLPHPvars;
-    public $CORE_CHTMLPHPvars;
-    public $DEFAULT_PAGE;
-    public $CURRENT_PAGE;
-    public $PAGES = array();
+	public $CORE_SCRIPT;
+	public $CORE_TEMPLATE;
+	public $CORE_HTMLPHPvars;
+	public $CORE_CHTMLPHPvars;
+	public $DEFAULT_PAGE;
+	public $CURRENT_PAGE;
+	public $PAGES = array();
   
     //----------- Read FileContents Start -----------
     function Read_FileContents($FILE_PATHNAME) {

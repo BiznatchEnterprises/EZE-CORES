@@ -189,18 +189,18 @@ class EZE_CORES {
                 $TemplatePHP = $this->APP_PATH . $this->TEMPLATE_PATH . $this->CORE_TEMPLATE . "script.php";
                 $TemplateVARS = $this->APP_PATH . $this->TEMPLATE_PATH . $this->CORE_TEMPLATE . "html-php-variables.php";
 
-                if (is_readable($TemplateHTML))
+                if (is_readable($TemplateHTML) == TRUE)
                 {
                     $this->APP_OUTPUT = $this->Read_FileContents($TemplateHTML);
                     $this->APP_OUTPUT = str_replace("##CORE_OUTPUT##", $this->CORE_OUTPUT, $this->APP_OUTPUT);
                 }
 
-                if (is_readable($TemplateHTML))
+                if (is_readable($TemplatePHP) == TRUE)
                 {
                     include($TemplatePHP);
                 }
 
-                if (is_readable($TemplateVARS))
+                if (is_readable($TemplateVARS) == TRUE)
                 {
                     include($TemplateVARS);
                 }

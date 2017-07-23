@@ -14,26 +14,27 @@ include('EZE-Cores-Plugin.php'); //
 // www.domain.com/?page=home     
 // www.domain.com/?page=blog
 
+$PAGE = "";
+
+$WEB_APP = new EZE_CORES;
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~ GET/Post Variable [PAGE] Start ~~~~~~~~~~~~~~~~~~~~~~~~~~
-if (isset($_POST["page"]) == TRUE) {
-    $WEB_APP->Change_CurrentPage($_POST["page"]);
-}
-if (isset($PAGE) == FALSE) {
     if (isset($_POST["page"]) == TRUE) {
-        $WEB_APP->Change_CurrentPage($_POST["page"]);
+        $PAGE = $_POST["page"];
     }
-}
-if (isset($PAGE) == FALSE) {
+    if (isset($_POST["PAGE"]) == TRUE) {
+        $PAGE = $_POST["PAGE"];
+    }
     if (isset($_GET["page"]) == TRUE) {
-        $WEB_APP->Change_CurrentPage($_GET["page"]);
+        $PAGE = $_GET["page"];
     }
-}
-if (isset($PAGE) == FALSE) {
     if (isset($_GET["PAGE"]) == TRUE) {
-        $WEB_APP->Change_CurrentPage($_GET["PAGE"]);
+        $PAGE = $_GET["PAGE"];
     }
-}
+
+    if ($PAGE <> ""){
+        $WEB_APP->Change_CurrentPage($PAGE);
+    }
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~ GET/Post Variable [PAGE] End ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~ Page Sections Start ~~~~~~~~~~~~~~~~~~~~~~~~~~

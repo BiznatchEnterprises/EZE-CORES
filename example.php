@@ -31,7 +31,6 @@ $WEB_APP = new EZE_CORES;
     if (isset($_GET["PAGE"]) == TRUE) {
         $PAGE = $_GET["PAGE"];
     }
-
     if ($PAGE <> ""){
         $WEB_APP->Change_CurrentPage($PAGE);
     }

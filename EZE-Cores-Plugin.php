@@ -1,28 +1,60 @@
 <?php
-//##########################################################################
-//####################### EZE-CORES (Plugin-Class) #########################
-//#######################        Version 1.0       #########################
-//#######################   Biznatch Enterprises   #########################
-//#   https://github.com/BiznatchEnterprises/EZE-CORES/tree/plugin-class   #
-//#######################       May 31, 2017       #########################
-//##########################################################################
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ * |||            EZE-CORES (Plugin-Class 1.0)  [May 31, 2017]              |||
+ * |||  https://github.com/BiznatchEnterprises/EZE-CORES/tree/plugin-class  |||
+ * |||      Copyright (C) 2017 Biznatch Enterprises - Biznaturally.ca  	    |||
+ * |||                                                                      |||
+ * |||   MIT License https://opensource.org/licenses/MIT                    |||
+ * |||   Permission is hereby granted, free of charge, to any person        |||
+ * |||   obtaining a copy of this software and associated documentation     |||
+ * |||   files (the "Software"), to deal in the Software without            |||
+ * |||   restriction, including without limitation the rights to use,       |||
+ * |||   copy, modify, merge, publish, distribute, sublicense, and/or       |||
+ * |||   sell copies of the Software, and to permit persons to whom the     |||
+ * |||   Software is furnished to do so, subject to the following           |||
+ * |||   conditions: The above copyright notice and this permission         |||
+ * |||   notice shall be included in all copies or substantial portions     |||
+ * |||   of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT         |||
+ * |||   WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT        |||
+ * |||   LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A        |||
+ * |||   PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE      |||
+ * |||   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES      |||
+ * |||   OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR      |||
+ * |||   OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE          |||
+ * |||   SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.             |||
+ * |||                                                                      |||
+ * ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 // ~~~~~~~ START PLUGIN CLASS ~~~~~~~
 class EZE_CORES {
 
-	public $APP_PATH;
-	public $TEMPLATE_PATH;
-	public $APP_OUTPUT;
+    public $APP_PATH;
+    public $TEMPLATE_PATH;
+    public $APP_OUTPUT;
 	public $CORE_OUTPUT;
 	public $CORE_FILEPATH;
 	public $CORE_LAYOUT;
-	public $CORE_SCRIPT;
-	public $CORE_TEMPLATE;
-	public $CORE_HTMLPHPvars;
-	public $CORE_CHTMLPHPvars;
-	public $DEFAULT_PAGE;
-	public $CURRENT_PAGE;
-	public $PAGES = array();
+    public $CORE_SCRIPT;
+    public $CORE_TEMPLATE;
+    public $CORE_HTMLPHPvars;
+    public $CORE_CHTMLPHPvars;
+    public $DEFAULT_PAGE;
+    public $CURRENT_PAGE;
+    public $PAGES = array();
+
+    public function Clean_Script($RAWDATA){
+        $FINDVARS  = array(
+		    '<?php',
+		    '?>'
+		);
+
+        $REPLACEVARS = array(
+		    "",
+		    ""
+		);
+
+        return str_replace($FINDVARS, $REPLACEVARS, $RAWDATA);
+    }
   
     //----------- Read FileContents Start -----------
     function Read_FileContents($FILE_PATHNAME) {
@@ -44,14 +76,14 @@ class EZE_CORES {
 	            fclose($open_file);
 	    } else {
 	        //echo '<br><u><b>ERROR:</b>' . $FILE_PATHNAME . ' Not Readable!</u><br>';
-	return '<NoPermissions>';
+	return 'NoPermissions';
 	    }
         
         if ($FILE_CONTENTS <> '') { 
     return $FILE_CONTENTS; 
         unset($FILE_CONTENTS);
         } else {
-    return '<EmptyContents>';
+    //return 'EmptyContents';
         }
     }
      //----------- Read FileContents End -----------
@@ -116,11 +148,12 @@ class EZE_CORES {
     //----------- Load Layout (HTML Template) End -----------
 
     //----------- Load PHP Script Start -----------
-    function Load_Script() {
-
+    public function Load_Script() {
         if ($this->CORE_FILEPATH <> ''){
             if ($this->CORE_SCRIPT <> ''){
-                include($this->CORE_FILEPATH . $this->CORE_SCRIPT);
+
+                eval($this->Clean_Script($this->Read_FileContents($this->CORE_FILEPATH . $this->CORE_SCRIPT)));
+
             }
         }
 
@@ -189,19 +222,16 @@ class EZE_CORES {
                 $TemplatePHP = $this->APP_PATH . $this->TEMPLATE_PATH . $this->CORE_TEMPLATE . "script.php";
                 $TemplateVARS = $this->APP_PATH . $this->TEMPLATE_PATH . $this->CORE_TEMPLATE . "html-php-variables.php";
 
-                if (is_readable($TemplateHTML) == TRUE)
-                {
+                if (is_readable($TemplateHTML) == TRUE){
                     $this->APP_OUTPUT = $this->Read_FileContents($TemplateHTML);
                     $this->APP_OUTPUT = str_replace("##CORE_OUTPUT##", $this->CORE_OUTPUT, $this->APP_OUTPUT);
                 }
 
-                if (is_readable($TemplatePHP) == TRUE)
-                {
+                if (is_readable($TemplatePHP) == TRUE){
                     include($TemplatePHP);
                 }
 
-                if (is_readable($TemplateVARS) == TRUE)
-                {
+                if (is_readable($TemplateVARS) == TRUE){
                     include($TemplateVARS);
                 }
 
@@ -269,7 +299,7 @@ class EZE_CORES {
         $this->PAGES[$PAGEID]['BasePath'] = $BASEPATH;
             if ($LAYOUTFILE == ''){ $LAYOUTFILE = 'layout.html'; }
         $this->PAGES[$PAGEID]['LayoutFile'] = $LAYOUTFILE;
-            if ($SCRIPTFILE == ''){ $LAYOUTFILE = 'script.php'; }
+            if ($SCRIPTFILE == ''){ $SCRIPTFILE = 'script.php'; }
         $this->PAGES[$PAGEID]['ScriptFile'] = $SCRIPTFILE;
             if ($HTMLPHPVARSFILE == ''){ $HTMLPHPVARSFILE = 'html-php-variables.php'; }
         $this->PAGES[$PAGEID]['HTMLPHPVARSFile'] = $HTMLPHPVARSFILE;
@@ -280,7 +310,6 @@ class EZE_CORES {
 
     //----------- Execute (Page) Start -----------
     function Execute() {
-
         if ($this->CURRENT_PAGE == '') { $this->CURRENT_PAGE = $this->DEFAULT_PAGE; }
 
         $keys = array_keys($this->PAGES);
@@ -326,9 +355,8 @@ class EZE_CORES {
     }
     //----------- Reset End -----------
 
-     
     //----------- Clean Start -----------
-    function Clean() {
+    public function Clean() {
 
         unset($this->CORE_FILEPATH);
         unset($this->CORE_LAYOUT);
@@ -340,16 +368,15 @@ class EZE_CORES {
     //----------- Clean End -----------
 
     //----------- Generate Start -----------
-    function Generate() {
+    public function Generate() {
 
         $this->CORE_OUTPUT = '';
         $this->APP_OUTPUT = '';
-
+        $this->Load_Script();
         $this->Load_Layout();
         $this->Load_HTMLModules();
-        $this->Load_Script();
         $this->Load_HTMLPHPvars();
-	$this->Load_Template();
+        $this->Load_Template();
         
         return $this->APP_OUTPUT;
     }
@@ -357,5 +384,4 @@ class EZE_CORES {
 
 }
 // ~~~~~~~ END PLUGIN CLASS ~~~~~~~
-
 ?>

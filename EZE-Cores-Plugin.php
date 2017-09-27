@@ -31,9 +31,9 @@ class EZE_CORES {
     public $APP_PATH;
     public $TEMPLATE_PATH;
     public $APP_OUTPUT;
-	public $CORE_OUTPUT;
-	public $CORE_FILEPATH;
-	public $CORE_LAYOUT;
+    public $CORE_OUTPUT;
+    public $CORE_FILEPATH;
+    public $CORE_LAYOUT;
     public $CORE_SCRIPT;
     public $CORE_TEMPLATE;
     public $CORE_HTMLPHPvars;
